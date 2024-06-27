@@ -11,7 +11,7 @@ class Bomctl < Formula
   on_macos do
     on_intel do
       url "https://github.com/bomctl/bomctl/releases/download/v0.2.1/bomctl_0.2.1_darwin_amd64.tar.gz"
-      sha256 "79496c50b74b15403aed957a2fbc9f411f42d5b2a34f3dc5d472bc953d1dba44"
+      sha256 "31d8da70b9e46cdd46e182b08909c492fecc2d367a0ef6e8d96d281d36b0f7a2"
 
       def install
         bin.install "bomctl"
@@ -19,7 +19,7 @@ class Bomctl < Formula
     end
     on_arm do
       url "https://github.com/bomctl/bomctl/releases/download/v0.2.1/bomctl_0.2.1_darwin_arm64.tar.gz"
-      sha256 "3beb57d44b2f4b5c2df829ccdf56481d5c0585118a5c71331081917497201255"
+      sha256 "117db77d3786ab8ce89bb04603ec746b8444c7e812e3cc23441a7910a110030b"
 
       def install
         bin.install "bomctl"
@@ -31,7 +31,7 @@ class Bomctl < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/bomctl/bomctl/releases/download/v0.2.1/bomctl_0.2.1_linux_amd64.tar.gz"
-        sha256 "26a0a086518188dcc016aaf683665f77dfbe22348d44a30445bd373ebdcdcf9c"
+        sha256 "29173fe651b0b80b810f674accebb35c38345b91d2630c250413d423f2e08375"
 
         def install
           bin.install "bomctl"
@@ -41,7 +41,7 @@ class Bomctl < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/bomctl/bomctl/releases/download/v0.2.1/bomctl_0.2.1_linux_arm64.tar.gz"
-        sha256 "4040522ff4cb194203d893f61c70cc4541b59654f5f1453878d3c13aad9093ff"
+        sha256 "7afb9738ee2d6bac42bfd08eafa526473056e0d14b7277a762ae2b895a0385aa"
 
         def install
           bin.install "bomctl"
