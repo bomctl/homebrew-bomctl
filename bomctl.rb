@@ -5,21 +5,21 @@
 class Bomctl < Formula
   desc "Format agnostic SBOM tooling"
   homepage "https://github.com/bomctl/bomctl"
-  version "0.3.1"
+  version "0.4.0"
   license "Apache License 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/bomctl/bomctl/releases/download/v0.3.1/bomctl_0.3.1_darwin_amd64.tar.gz"
-      sha256 "f36566991655e0896244aa40b5a8f545968017c2f6d03c02e9f3ef40e803b8ef"
+      url "https://github.com/bomctl/bomctl/releases/download/v0.4.0/bomctl_0.4.0_darwin_amd64.tar.gz"
+      sha256 "6bd56d23f0d1e1bcafc3738efb3b43de182d66df66620efbb438965f8ef6e0f3"
 
       def install
         bin.install "bomctl"
       end
     end
     on_arm do
-      url "https://github.com/bomctl/bomctl/releases/download/v0.3.1/bomctl_0.3.1_darwin_arm64.tar.gz"
-      sha256 "5628d7adbadb091c36836dce21d271b6a939e420462cf242a8f67d7d34ef46b2"
+      url "https://github.com/bomctl/bomctl/releases/download/v0.4.0/bomctl_0.4.0_darwin_arm64.tar.gz"
+      sha256 "07f9ee1d3b24c4fea338846e2ac0b2fbaa5b56d91ef2cd249f4d9c5845ba4791"
 
       def install
         bin.install "bomctl"
@@ -30,8 +30,8 @@ class Bomctl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bomctl/bomctl/releases/download/v0.3.1/bomctl_0.3.1_linux_amd64.tar.gz"
-        sha256 "f1997e50e7ff78ab50abcd4d17f58e646ca418196252523309dd0a0ce4693fd5"
+        url "https://github.com/bomctl/bomctl/releases/download/v0.4.0/bomctl_0.4.0_linux_amd64.tar.gz"
+        sha256 "8f5643fae5c08f96a73fad4e6412ed2e8112b006d79927c42cdc5ff86117c709"
 
         def install
           bin.install "bomctl"
@@ -40,8 +40,8 @@ class Bomctl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/bomctl/bomctl/releases/download/v0.3.1/bomctl_0.3.1_linux_arm64.tar.gz"
-        sha256 "b3790e06a8abc424b0884b08e1929a4b745e659dc4a5cd2ccc4cbb8998834267"
+        url "https://github.com/bomctl/bomctl/releases/download/v0.4.0/bomctl_0.4.0_linux_arm64.tar.gz"
+        sha256 "675af2b9cdee43ccd46da740b60e3c5699d45f17d330707c4e622a409bcd9bca"
 
         def install
           bin.install "bomctl"
